@@ -1,0 +1,27 @@
+# This is Git's per-user configuration file.
+[user]
+	name = Clathweppes
+	email = jhwyk52@gmail.com
+	signingkey = 2AF41E17EA9FF990
+# Please adapt and uncomment the following lines:
+#	name = Clath
+#	email = clath@Clath.local
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[http]
+	proxy = http://127.0.0.1:7890
+[https]
+	proxy = http://127.0.0.1:7890
+[init]
+	defaultBranch = main
+[commit]
+	gpgsign = true
+[tag]
+	gpgSign = true
+[gui]
+	recentrepo = /Users/clath/code/tldr
+[core]
+	excludesfile = /Users/clath/.gitignore_global
